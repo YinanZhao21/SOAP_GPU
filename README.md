@@ -40,6 +40,7 @@ To install SOAP-GPU, after unziping the zip file:
 -------------------------------------------------
 
 $cd SOAP_GPU
+
 $bash install_SOAP_GPU.sh
 
 

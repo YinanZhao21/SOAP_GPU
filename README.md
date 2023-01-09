@@ -1,13 +1,5 @@
-_____________________________       _____________________  __
-__  ___/_  __ \__    |__  __ \      __  ____/__  __ \_  / / /
-_____ \_  / / /_  /| |_  /_/ /_______  / __ __  /_/ /  / / /
-____/ // /_/ /_  ___ |  ____/_/_____/ /_/ / _  ____// /_/ /
-/____/ \____/ /_/  |_/_/            \____/  /_/     \____/
-
-
-#########################################
 INTRODUCTION
-#########################################
+-----------------------------
 
 SOAP-GPU is a revised SOAP 2.0 code (Dumusque et al. 2014, ApJ, 796, 132) that simulate spectral time series with the effect of active regions (spot, faculae or both).
 In addition to the traditional outputs of SOAP 2.0 (the cross-correlation function and extracted parameters: radial velocity, bisector span, full width at half maximum),
@@ -23,9 +15,9 @@ allows users to simulate stellar activity for stars other than the Sun.
 
 The code is published in Zhao & Dumusque et al. 2023 and more details are shown in that paper.
 
-#########################################
+
 INSTALLATION AND RUNNING SOAP-GPU
-#########################################
+-----------------------------
 
 The SOAP GPU code is written in C, with python scripts for input pre-processing and output post-processing.
 The code has been tested on python 3.7 and CUDA 10.1 and though it is expected to work properly on more recent versions, the user is advised to use those versions in case of troubles.
@@ -106,9 +98,9 @@ A .npz file can be read using data=numpy.load(FILE.npz) and the keys of the obje
 Those can be read by doing numpy.fromfile('SPECTRUM_NAME.bin', dtype='double'). The wavelength is given in the .npz file
 
 
-#########################################
+
 TROUBLESHOOTING
-#########################################
+-----------------------------
 
 If when running the code "phoenix_extraction.py" you get the following error message:
 "ImportError: Cannot load backend 'Qt5Agg' which requires the 'qt5' interactive framework, as 'headless' is currently running"
@@ -120,9 +112,9 @@ If when running the code "CB_injection_faculae.py" you get the following error m
 "./BIS_FIT2: error while loading shared libraries: libgsl.so.25: cannot open shared object file: No such file or directory"
 the code cannot find a GSL library. Make sure GSL is installed
 
-#########################################
+
 CONTACT
-#########################################
+-----------------------------
 Yinan Zhao
 
 Yinan.Zhao@unige.ch

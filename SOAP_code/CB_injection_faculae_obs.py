@@ -384,12 +384,12 @@ velo_shift_fac_array = diffbis_coeffs_frame['velo_shift_fac']
 depth = np.linspace(0.0,1.0,100)
 
 coeff_frame = np.load(BIS_dir+'coeff_mu_v1.npz',allow_pickle=True)
-mu_coeff = coeff_frame['coeff_obs']
-mu_array = coeff_frame['mus']
+mu_coeff = coeff_frame['coeff_obs'][::-1]
+mu_array = coeff_frame['mus'][::-1]
 
 
-vel_interpo_mu2 = np.poly1d(mu_coeff[0]) (depth)
-vel_interpo_mu8 = np.poly1d(mu_coeff[7]) (depth)
+vel_interpo_mu2 = np.poly1d(mu_coeff[10]) (depth)
+vel_interpo_mu8 = np.poly1d(mu_coeff[3]) (depth)
 
 index = np.argmin(vel_interpo_mu8-vel_interpo_mu2)
 

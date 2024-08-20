@@ -84,7 +84,7 @@ N_act   = int(config.get('star','N_act'))
 
 input_prefix = config.get('data_io','input_prefix')
 input_dir = input_prefix+config.get('data_io','input_dir')
-output_prefix = config.get('data_io','output_prefix')+'_phoenix'+str(Temp)
+output_prefix = config.get('data_io','output_prefix')
 maps_dir = output_prefix+config.get('data_io','maps_dir')
 raw_dir = output_prefix+config.get('data_io','raw_dir')
 final_spec_dir = output_prefix+config.get('data_io','spec_dir')

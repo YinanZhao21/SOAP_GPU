@@ -118,7 +118,7 @@ CONTACT
 -----------------------------
 Yinan Zhao
 
-Yinan.Zhao@unige.ch
+zhaoyinan2121@gmail.com
 
 Observatoire de Genève
 51 Chemin Pegasi
